@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
+      
     }
 
     void Update()
@@ -22,6 +23,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.D)) 
         {
             side = 1;
+
         }
         else if (Input.GetKey(KeyCode.A))
         {
@@ -34,7 +36,6 @@ public class PlayerController : MonoBehaviour
 
         Vector2 xclamp = new Vector2(rb2d.velocity.x, 0);
         rb2d.velocity = new Vector2(Vector2.ClampMagnitude(xclamp, speed).x, rb2d.velocity.y);
-        print(rb2d.velocity.x);
 
         if (Input.GetKeyDown(KeyCode.Space) && grounded)
         {
