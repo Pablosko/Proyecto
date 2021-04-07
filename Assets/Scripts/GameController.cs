@@ -7,6 +7,7 @@ public class GameController : MonoBehaviour
     public static GameController instance;
     [System.NonSerialized]
     public PlayerController player;
+    public LevelManager levelManager;
     void Awake()
     {
         instance = this;

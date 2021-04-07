@@ -29,6 +29,7 @@ public class PlayerController : MonoBehaviour
         {
             side = -1;
         }
+
         if(grounded)
             rb2d.AddForce(Vector2.right * side * aceleration);
         else

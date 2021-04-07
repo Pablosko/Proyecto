@@ -58,8 +58,13 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\InventoryController.cs" />
+    <Compile Include="Assets\Scripts\Inventario\Slot.cs" />
     <Compile Include="Assets\Scripts\Utils\Stat.cs" />
     <Compile Include="Assets\CheckGround.cs" />
+    <Compile Include="Assets\LevelManager.cs" />
+    <Compile Include="Assets\Level.cs" />
+    <Compile Include="Assets\Portal.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
